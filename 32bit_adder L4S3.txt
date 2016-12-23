@@ -1,0 +1,9 @@
+module add32_carry (a , b, cin , sum, cout);
+
+input[31:0] a, b ;
+output[31:0] sum;
+output cout;
+
+assign {cout, sum } = a + b + cin; // we are combining sum and cout to form the 32bit output
+
+endmodule 
